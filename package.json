@@ -1,0 +1,19 @@
+{
+  "name": "blogr-landing",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "compile:sass": "node-sass public/sass/style.scss public/css/style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
