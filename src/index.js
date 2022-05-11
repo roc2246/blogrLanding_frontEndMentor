@@ -13,7 +13,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Agency Landing Page',
+        title: 'Blogr Landing Page',
         name: 'Riley Childs'
     })
 })

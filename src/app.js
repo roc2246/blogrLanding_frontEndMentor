@@ -5,7 +5,7 @@ app.use(express.json())
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Agency Landing Page',
+        title: 'Blogr Landing Page',
     })
 })
 
