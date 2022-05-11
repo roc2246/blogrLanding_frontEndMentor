@@ -1,5 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
-/*Whole Content*/
 html {
   font-size: 16px;
   font-family: "Overpass", sans-serif; }
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+svg {
+  overflow: visible; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+#topContent {
+  color: white;
+  background-color: #ff8f70;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem; }
+  #topContent a:link {
+    color: white; }
+  #topContent a:visited {
+    color: white; }
+  #topContent nav#topContent_nav {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem; }
+    #topContent nav#topContent_nav #topContent_nav_left {
+      display: flex;
+      flex: row;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      #topContent nav#topContent_nav #topContent_nav_left svg {
+        padding-top: .25rem;
+        margin-right: 2rem; }
+      #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
+        margin-left: 1rem;
+        margin-right: 1rem; }
+        #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption h5 {
+          cursor: pointer; }
+        #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption .topContent_nav_left_dropDownOption--hover {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          background-color: white; }
+          #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption .topContent_nav_left_dropDownOption--hover a {
+            color: black; }
+            #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption .topContent_nav_left_dropDownOption--hover a:hover {
+              font-weight: bolder; }
+    #topContent nav#topContent_nav #topContent_nav_right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 1.5rem; }
+      #topContent nav#topContent_nav #topContent_nav_right a {
+        margin-left: 2rem; }
+  #topContent header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 4rem; }
+
+@media only screen and (max-width: 375px) {
+  #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
+    display: none; }
+  #topContent nav#topContent_nav #topContent_nav_right {
+    display: none; } }

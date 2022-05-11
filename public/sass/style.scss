@@ -6,6 +6,8 @@ $content_textColor: hsl(0, 0%, 100%);
 
 $topContent_backgroundColor--lighter: hsl(13, 100%, 72%);
 $topContent_backgroundColor--darker: hsl(353, 100%, 62%);
+$topContent_nav_dropDownOption_backgroundColor: white;
+$topContent_nav_dropDownOption_linkColor: black;
 $topContent_signUp_textColor: hsl(356, 100%, 66%);
 $topContent_signUp_textColor--hover: hsl(0, 0%, 100%);
 $topContent_signUp_backgroundColor: hsl(0, 0%, 100%);
@@ -25,8 +27,109 @@ $content_fontSize: 16px;
 $content_fontFamily: "Overpass", sans-serif;
 
 //SCSS
-/*Whole Content*/
 html {
   font-size: $content_fontSize;
   font-family: $content_fontFamily;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+svg {
+  overflow: visible;
+}
+
+a {
+  text-decoration: none;
+  color: $content_textColor;
+}
+
+#topContent {
+  color: $content_textColor;
+  background-color: $topContent_backgroundColor--lighter;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  a {
+    &:link {
+      color: $content_textColor;
+    }
+    &:visited {
+      color: $content_textColor;
+    }
+  }
+  nav#topContent_nav {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    #topContent_nav_left {
+      display: flex;
+      flex: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+svg{
+    padding-top: .25rem;
+    margin-right: 2rem;
+}
+      .topContent_nav_left_dropDownOption {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        h5 {
+          cursor: pointer;
+        }
+        .topContent_nav_left_dropDownOption--hover {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          background-color: $topContent_nav_dropDownOption_backgroundColor;
+          a {
+            color: $topContent_nav_dropDownOption_linkColor;
+            &:hover {
+              font-weight: bolder;
+            }
+          }
+        }
+      }
+    }
+    #topContent_nav_right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+        a{
+            margin-left: 2rem;
+        }
+    }
+  }
+  header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #topContent {
+    nav#topContent_nav {
+        #topContent_nav_left{
+            .topContent_nav_left_dropDownOption {
+                display: none;
+              }
+        }
+      
+      #topContent_nav_right {
+          display: none;
+      }
+    }
+  }
 }
