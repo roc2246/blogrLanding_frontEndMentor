@@ -1,0 +1,32 @@
+//Imports
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+
+//Colors
+$content_textColor: hsl(0, 0%, 100%);
+
+$topContent_backgroundColor--lighter: hsl(13, 100%, 72%);
+$topContent_backgroundColor--darker: hsl(353, 100%, 62%);
+$topContent_signUp_textColor: hsl(356, 100%, 66%);
+$topContent_signUp_textColor--hover: hsl(0, 0%, 100%);
+$topContent_signUp_backgroundColor: hsl(0, 0%, 100%);
+$topContent_signUp_backgroundColor--hover: hsl(355, 100%, 74%);
+
+$mainContent_row_headingColor: hsl(208, 49%, 24%);
+$mainContent_row_backgroundColor--dark--lighter: hsl(237, 23%, 32%);
+$mainContent_row_backgroundColor--dark--darker: hsl(237, 17%, 21%);
+$mainContent_row_textColor--dark: hsl(207, 13%, 34%);
+$mainContent_row_textColor--white: hsl(0, 0%, 100%);
+
+$footer_textColor: hsl(240, 2%, 79%);
+$footer_backgroundColor: hsl(240, 10%, 16%);
+
+//Font
+$content_fontSize: 16px;
+$content_fontFamily: "Overpass", sans-serif;
+
+//SCSS
+/*Whole Content*/
+html {
+  font-size: $content_fontSize;
+  font-family: $content_fontFamily;
+}
