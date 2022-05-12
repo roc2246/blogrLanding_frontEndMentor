@@ -149,8 +149,8 @@ a {
   //Top Row
   .mainContent_row:nth-child(2) {
     background-color: white;
-    margin-left:$mainContent_row_margin;
-  justify-content: flex-end;
+    margin-left: $mainContent_row_margin;
+    justify-content: flex-end;
   }
   //"State of the Art Infrastructure" row
   .mainContent_row:nth-child(3) {
@@ -158,13 +158,44 @@ a {
     background-color: $mainContent_row_backgroundColor--dark--darker;
     border-bottom-left-radius: $content_borderRadius;
     border-top-right-radius: $content_borderRadius;
- color: $mainContent_row_textColor--white;
+    color: $mainContent_row_textColor--white;
   }
 }
 
 footer#bottomContent {
   border-top-right-radius: $content_borderRadius;
   background-color: $footer_backgroundColor;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 4rem;
+  img{
+    transform: scale(40%);
+    margin-bottom: 12rem;
+  }
+  #bottomContent_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    h5{
+      color: $footer_textColor;
+    }
+    .bottomContent_nav_subOptions {
+      display: flex;
+      flex-direction: column;
+      a {
+      color: $footer_textColor;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 375px) {
