@@ -19,8 +19,7 @@ a {
 #topContent {
   color: white;
   background-color: #ff8f70;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem; }
+  border-bottom-left-radius: 2rem; }
   #topContent a:link {
     color: white; }
   #topContent a:visited {
@@ -39,7 +38,7 @@ a {
       justify-content: space-around;
       flex-wrap: wrap; }
       #topContent nav#topContent_nav #topContent_nav_left svg {
-        padding-top: .25rem;
+        padding-top: 0.25rem;
         margin-right: 2rem; }
       #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
         margin-left: 1rem;
@@ -69,6 +68,25 @@ a {
     margin-right: auto;
     width: 100%;
     padding-bottom: 4rem; }
+
+#mainContent {
+  margin-top: 6rem; }
+  #mainContent h2#mainContent_heading {
+    text-align: center;
+    color: #1f3f5b; }
+  #mainContent .mainContent_row {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    margin: 8rem; }
+    #mainContent .mainContent_row .mainContent_row_blurb {
+      width: 70%;
+      margin: 2rem; }
+      #mainContent .mainContent_row .mainContent_row_blurb h3.mainContent_row_blurb_heading {
+        color: #1f3f5b; }
+    #mainContent .mainContent_row .mainContent_row_img {
+      width: 80%;
+      height: auto; }
 
 @media only screen and (max-width: 375px) {
   #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
