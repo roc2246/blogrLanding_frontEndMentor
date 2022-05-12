@@ -30,6 +30,17 @@ $content_fontFamily: "Overpass", sans-serif;
 $content_borderRadius: 2rem;
 $mainContent_row_margin: 4rem;
 
+@mixin ctaBttn(){
+    background-color: $topContent_signUp_backgroundColor;
+  color: $topContent_signUp_textColor;
+  border-radius: 2rem;
+  padding: .75rem;
+  &:hover{
+    background-color: $topContent_signUp_backgroundColor--hover;
+  color: $topContent_signUp_textColor--hover;
+  }
+}
+
 //SCSS
 html {
   font-size: $content_fontSize;
@@ -50,7 +61,7 @@ a {
 
 #topContent {
   color: $content_textColor;
-  background-color: $topContent_backgroundColor--lighter;
+  background-color: $topContent_backgroundColor--darker;
   border-bottom-left-radius: $content_borderRadius;
   a {
     &:link {
@@ -73,7 +84,9 @@ a {
       flex: row;
       justify-content: space-around;
       flex-wrap: wrap;
-      img {
+      .topContent_nav_left_logo {
+        width: 25%;
+        height: auto;
         padding-top: 0.25rem;
         margin-right: 2rem;
       }
@@ -84,13 +97,16 @@ a {
           cursor: pointer;
         }
         .topContent_nav_left_dropDownOption--hover {
-          display: flex;
+          display: none; //Change once js coding begins
           flex-direction: column;
           position: absolute;
           background-color: $topContent_nav_dropDownOption_backgroundColor;
+         padding: 1rem;
           a {
             color: $topContent_nav_dropDownOption_linkColor;
+           margin: .25rem;
             &:hover {
+              display: flex;
               font-weight: bolder;
             }
           }
@@ -105,6 +121,12 @@ a {
       padding: 1.5rem;
       a {
         margin-left: 2rem;
+        
+      }
+      .ctaButton {
+       @include ctaBttn();
+       padding-left: 1.5rem;
+       padding-right: 1.5rem;
       }
     }
   }
@@ -113,9 +135,39 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
+    h1#topContent_heading{
+      margin-top: 4rem;
+      margin-bottom: 0rem;
+    }
+    h5#topContent_subheading{
+     margin-top: .5rem;
+      margin-bottom: 4rem;
+    }
+    a{
+    background-color: $topContent_signUp_backgroundColor--hover;
+    color: $topContent_signUp_textColor;
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 2rem;
+    border-color: white;
+    padding: .75rem;
+    margin: .5rem;
+    &:hover{
+      background-color: $topContent_signUp_backgroundColor;
+    color: $topContent_signUp_textColor;
+    }
+   }
+    .ctaButton:nth-child(1) {
+      border: none;
+      @include ctaBttn();
+    }
   }
 }
+
+
+
+
 
 #mainContent {
   margin-top: 6rem;
