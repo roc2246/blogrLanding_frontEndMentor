@@ -30,14 +30,14 @@ $content_fontFamily: "Overpass", sans-serif;
 $content_borderRadius: 2rem;
 $mainContent_row_margin: 4rem;
 
-@mixin ctaBttn(){
-    background-color: $topContent_signUp_backgroundColor;
+@mixin ctaBttn() {
+  background-color: $topContent_signUp_backgroundColor;
   color: $topContent_signUp_textColor;
   border-radius: 2rem;
-  padding: .75rem;
-  &:hover{
+  padding: 0.75rem;
+  &:hover {
     background-color: $topContent_signUp_backgroundColor--hover;
-  color: $topContent_signUp_textColor--hover;
+    color: $topContent_signUp_textColor--hover;
   }
 }
 
@@ -61,8 +61,13 @@ a {
 
 #topContent {
   color: $content_textColor;
-  background-color: $topContent_backgroundColor--darker;
   border-bottom-left-radius: $content_borderRadius;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"),linear-gradient(
+      to right,
+      $topContent_backgroundColor--lighter,
+      $topContent_backgroundColor--darker
+    );
+background-position: center;
   a {
     &:link {
       color: $content_textColor;
@@ -101,10 +106,10 @@ a {
           flex-direction: column;
           position: absolute;
           background-color: $topContent_nav_dropDownOption_backgroundColor;
-         padding: 1rem;
+          padding: 1rem;
           a {
             color: $topContent_nav_dropDownOption_linkColor;
-           margin: .25rem;
+            margin: 0.25rem;
             &:hover {
               display: flex;
               font-weight: bolder;
@@ -121,12 +126,11 @@ a {
       padding: 1.5rem;
       a {
         margin-left: 2rem;
-        
       }
       .ctaButton {
-       @include ctaBttn();
-       padding-left: 1.5rem;
-       padding-right: 1.5rem;
+        @include ctaBttn();
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
       }
     }
   }
@@ -136,38 +140,34 @@ a {
     margin-right: auto;
     width: 100%;
     padding-bottom: 6rem;
-    h1#topContent_heading{
+    h1#topContent_heading {
       margin-top: 4rem;
       margin-bottom: 0rem;
     }
-    h5#topContent_subheading{
-     margin-top: .5rem;
+    h5#topContent_subheading {
+      margin-top: 0.5rem;
       margin-bottom: 4rem;
     }
-    a{
-    background-color: $topContent_signUp_backgroundColor--hover;
-    color: $topContent_signUp_textColor;
-    border: solid;
-    border-width: 0.1rem;
-    border-radius: 2rem;
-    border-color: white;
-    padding: .75rem;
-    margin: .5rem;
-    &:hover{
-      background-color: $topContent_signUp_backgroundColor;
-    color: $topContent_signUp_textColor;
+    a {
+      background-color: $topContent_signUp_backgroundColor--hover;
+      color: $topContent_signUp_textColor;
+      border: solid;
+      border-width: 0.1rem;
+      border-radius: 2rem;
+      border-color: white;
+      padding: 0.75rem;
+      margin: 0.5rem;
+      &:hover {
+        background-color: $topContent_signUp_backgroundColor;
+        color: $topContent_signUp_textColor;
+      }
     }
-   }
     .ctaButton:nth-child(1) {
       border: none;
       @include ctaBttn();
     }
   }
 }
-
-
-
-
 
 #mainContent {
   margin-top: 6rem;
@@ -222,7 +222,7 @@ footer#bottomContent {
   width: 100%;
   height: auto;
   padding: 4rem;
-  img{
+  img {
     transform: scale(40%);
     margin-bottom: 12rem;
   }
@@ -232,16 +232,16 @@ footer#bottomContent {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    h5{
+    h5 {
       color: $footer_textColor;
     }
     .bottomContent_nav_subOptions {
       display: flex;
       flex-direction: column;
       a {
-      color: $footer_textColor;
-      margin-top: .5rem;
-      margin-bottom: .5rem;
+        color: $footer_textColor;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         &:hover {
           text-decoration: underline;
         }
