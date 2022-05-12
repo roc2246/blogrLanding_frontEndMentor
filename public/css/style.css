@@ -9,9 +9,6 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-svg {
-  overflow: visible; }
-
 a {
   text-decoration: none;
   color: white; }
@@ -37,7 +34,7 @@ a {
       flex: row;
       justify-content: space-around;
       flex-wrap: wrap; }
-      #topContent nav#topContent_nav #topContent_nav_left svg {
+      #topContent nav#topContent_nav #topContent_nav_left img {
         padding-top: 0.25rem;
         margin-right: 2rem; }
       #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
@@ -78,19 +75,30 @@ a {
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    margin: 8rem; }
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     #mainContent .mainContent_row .mainContent_row_blurb {
-      width: 70%;
-      margin: 2rem; }
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: auto; }
       #mainContent .mainContent_row .mainContent_row_blurb h3.mainContent_row_blurb_heading {
         color: #1f3f5b; }
     #mainContent .mainContent_row .mainContent_row_img {
-      width: 80%;
+      width: 50%;
       height: auto; }
+  #mainContent .mainContent_row:nth-child(2) {
+    background-color: white;
+    margin-left: 4rem;
+    justify-content: flex-end; }
   #mainContent .mainContent_row:nth-child(3) {
+    margin-right: 4rem;
     background-color: #2c2d3f;
     border-bottom-left-radius: 2rem;
-    border-top-right-radius: 2rem; }
+    border-top-right-radius: 2rem;
+    color: white; }
 
 footer#bottomContent {
   border-top-right-radius: 2rem;

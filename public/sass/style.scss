@@ -28,6 +28,7 @@ $content_fontFamily: "Overpass", sans-serif;
 
 //Others
 $content_borderRadius: 2rem;
+$mainContent_row_margin: 4rem;
 
 //SCSS
 html {
@@ -40,10 +41,6 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-svg {
-  overflow: visible;
 }
 
 a {
@@ -76,7 +73,7 @@ a {
       flex: row;
       justify-content: space-around;
       flex-wrap: wrap;
-      svg {
+      img {
         padding-top: 0.25rem;
         margin-right: 2rem;
       }
@@ -126,33 +123,48 @@ a {
     text-align: center;
     color: $mainContent_row_headingColor;
   }
+  //All Rows
   .mainContent_row {
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    margin: 8rem;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .mainContent_row_blurb {
-      width: 70%;
-      margin: 2rem;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: auto;
       h3.mainContent_row_blurb_heading {
         color: $mainContent_row_headingColor;
       }
     }
-    .mainContent_row_img{
-      width: 80%;
+    .mainContent_row_img {
+      width: 50%;
       height: auto;
     }
   }
-  .mainContent_row:nth-child(3){
+  //Top Row
+  .mainContent_row:nth-child(2) {
+    background-color: white;
+    margin-left:$mainContent_row_margin;
+  justify-content: flex-end;
+  }
+  //"State of the Art Infrastructure" row
+  .mainContent_row:nth-child(3) {
+    margin-right: $mainContent_row_margin;
     background-color: $mainContent_row_backgroundColor--dark--darker;
     border-bottom-left-radius: $content_borderRadius;
-border-top-right-radius: $content_borderRadius;
+    border-top-right-radius: $content_borderRadius;
+ color: $mainContent_row_textColor--white;
   }
 }
 
 footer#bottomContent {
-border-top-right-radius: $content_borderRadius;
-background-color: $footer_backgroundColor;
+  border-top-right-radius: $content_borderRadius;
+  background-color: $footer_backgroundColor;
 }
 
 @media only screen and (max-width: 375px) {
