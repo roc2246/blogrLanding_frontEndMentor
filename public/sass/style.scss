@@ -26,6 +26,9 @@ $footer_backgroundColor: hsl(240, 10%, 16%);
 $content_fontSize: 16px;
 $content_fontFamily: "Overpass", sans-serif;
 
+//Others
+$content_borderRadius: 2rem;
+
 //SCSS
 html {
   font-size: $content_fontSize;
@@ -51,7 +54,7 @@ a {
 #topContent {
   color: $content_textColor;
   background-color: $topContent_backgroundColor--lighter;
-  border-bottom-left-radius: 2rem;
+  border-bottom-left-radius: $content_borderRadius;
   a {
     &:link {
       color: $content_textColor;
@@ -140,6 +143,16 @@ a {
       height: auto;
     }
   }
+  .mainContent_row:nth-child(3){
+    background-color: $mainContent_row_backgroundColor--dark--darker;
+    border-bottom-left-radius: $content_borderRadius;
+border-top-right-radius: $content_borderRadius;
+  }
+}
+
+footer#bottomContent {
+border-top-right-radius: $content_borderRadius;
+background-color: $footer_backgroundColor;
 }
 
 @media only screen and (max-width: 375px) {

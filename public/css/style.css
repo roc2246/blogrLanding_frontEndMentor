@@ -87,6 +87,14 @@ a {
     #mainContent .mainContent_row .mainContent_row_img {
       width: 80%;
       height: auto; }
+  #mainContent .mainContent_row:nth-child(3) {
+    background-color: #2c2d3f;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem; }
+
+footer#bottomContent {
+  border-top-right-radius: 2rem;
+  background-color: #25252d; }
 
 @media only screen and (max-width: 375px) {
   #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
