@@ -31,9 +31,9 @@ a {
     padding-left: 4rem;
     padding-right: 4rem; }
     #topContent nav#topContent_nav #topContent_nav_left {
+      width: 50%;
       display: flex;
       flex: row;
-      justify-content: space-around;
       flex-wrap: wrap; }
       #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_logo {
         width: 25%;

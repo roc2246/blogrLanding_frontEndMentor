@@ -62,12 +62,13 @@ a {
 #topContent {
   color: $content_textColor;
   border-bottom-left-radius: $content_borderRadius;
-  background-image: url("../images/bg-pattern-intro-desktop.svg"),linear-gradient(
+  background-image: url("../images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(
       to right,
       $topContent_backgroundColor--lighter,
       $topContent_backgroundColor--darker
     );
-background-position: center;
+  background-position: center;
   a {
     &:link {
       color: $content_textColor;
@@ -85,9 +86,9 @@ background-position: center;
     padding-left: 4rem;
     padding-right: 4rem;
     #topContent_nav_left {
+     width: 50%;
       display: flex;
       flex: row;
-      justify-content: space-around;
       flex-wrap: wrap;
       .topContent_nav_left_logo {
         width: 25%;
