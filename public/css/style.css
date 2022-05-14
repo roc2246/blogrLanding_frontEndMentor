@@ -117,6 +117,8 @@ a {
   #mainContent .mainContent_row {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: auto;
     margin-top: 2rem;
     margin-bottom: 4rem; }
     #mainContent .mainContent_row .mainContent_row_blurb {
@@ -130,9 +132,7 @@ a {
       #mainContent .mainContent_row .mainContent_row_blurb h2.mainContent_row_blurb_heading--light {
         margin-bottom: 0.5rem; }
   #mainContent .mainContent_row:nth-child(2) {
-    margin-left: 10rem;
-    width: 100%;
-    height: auto; }
+    margin-left: 10rem; }
     #mainContent .mainContent_row:nth-child(2) .mainContent_row_blurb {
       width: 35%;
       height: auto; }
@@ -151,8 +151,6 @@ a {
     background-repeat: no-repeat;
     background-position-y: -50rem;
     background-position-x: -20rem;
-    width: 100%;
-    height: auto;
     justify-content: space-evenly; }
     #mainContent .mainContent_row:nth-child(3) .mainContent_row_blurb {
       margin-top: auto;
@@ -160,12 +158,15 @@ a {
       width: 38%; }
     #mainContent .mainContent_row:nth-child(3) .mainContent_row_img {
       margin-top: -4rem;
-      margin-bottom: -7rem; }
+      margin-bottom: -7rem;
+      width: 40%;
+      height: auto; }
   #mainContent .mainContent_row:nth-child(4) {
-    width: 100%;
-    height: auto; }
+    overflow-x: hidden; }
     #mainContent .mainContent_row:nth-child(4) .mainContent_row_img {
-      margin-left: -18rem; }
+      margin-left: -17.5rem;
+      width: 100%;
+      height: auto; }
     #mainContent .mainContent_row:nth-child(4) .mainContent_row_blurb {
       margin-top: 8rem;
       margin-left: 5rem;
@@ -178,7 +179,8 @@ footer#bottomContent {
   flex-direction: row;
   width: 100%;
   height: auto;
-  padding: 4rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
   footer#bottomContent img {
     transform: scale(40%);
     margin-bottom: 12rem; }
