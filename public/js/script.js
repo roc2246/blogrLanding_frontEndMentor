@@ -11,14 +11,18 @@ if (screen.width <= 390) {
   });
 }
 
-const dropDownOption = document.getElementsByClassName('topContent_nav_left_dropDownOption--hover');
+const dropDownOption = document.getElementsByClassName(
+  "topContent_nav_left_dropDownOption--hover"
+);
 
 let toggleMenu = (o) => {
-    if (dropDownOption[o].style.display === "flex") {
-      dropDownOption[o].style.display = "none";
-      } else {
-        dropDownOption[o].style.display = "flex";
-      }
+  if (dropDownOption[o].style.display === "flex") {
+    dropDownOption[o].style.display = "none";
+    console.log(o, "leave");
+  } else {
+    dropDownOption[o].style.display = "flex";
+    console.log(o, "enter")
+  }
 };
 
 //Use to dedect offset elements
