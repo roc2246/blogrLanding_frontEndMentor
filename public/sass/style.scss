@@ -228,7 +228,7 @@ a {
     .mainContent_row_img {
       min-width: 50%;
       height: auto;
-      margin-left: 10rem;
+      margin-left: 12%;
       margin-top: -2rem;
     }
   }
@@ -245,6 +245,9 @@ a {
     background-position-x: -20rem;
     justify-content: space-evenly;
     .mainContent_row_blurb {
+      h2.mainContent_row_blurb_heading--light {
+        word-break: break-word;
+      }
       margin-top: auto;
       margin-bottom: auto;
       width: 36%;
@@ -261,14 +264,15 @@ a {
   .mainContent_row:nth-child(4) {
     overflow-x: hidden;
     .mainContent_row_img {
-      margin-left: -17.5rem;
-      width: 100%;
+      margin-left: -20.25%;
+      width: 70%;
       height: auto;
     }
     .mainContent_row_blurb {
       margin-top: 8rem;
       margin-left: 5rem;
-      margin-right: 12rem;
+      width: 35%;
+      height: auto;
     }
   }
 }
@@ -276,33 +280,34 @@ a {
 footer#bottomContent {
   border-top-right-radius: $content_borderRadius;
   background-color: $footer_backgroundColor;
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  img#bottomContent_logo {
-    margin-bottom: 12rem;
-  }
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   #bottomContent_nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    h5 {
-      color: $footer_textColor;
+    img#bottomContent_logo {
+      margin-bottom: 12rem;
     }
-    .bottomContent_nav_subOptions {
-      display: flex;
-      flex-direction: column;
-      a {
-        color: $footer_textColor;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        &:hover {
-          text-decoration: underline;
+    .bottomContent_nav_option {
+      h5 {
+        color: white;
+      }
+      .bottomContent_nav_subOptions {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: $footer_textColor;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

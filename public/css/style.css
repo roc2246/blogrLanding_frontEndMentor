@@ -154,7 +154,7 @@ a {
     #mainContent .mainContent_row:nth-child(2) .mainContent_row_img {
       min-width: 50%;
       height: auto;
-      margin-left: 10rem;
+      margin-left: 12%;
       margin-top: -2rem; }
   #mainContent .mainContent_row:nth-child(3) {
     background-color: #2c2d3f;
@@ -172,6 +172,8 @@ a {
       margin-bottom: auto;
       width: 36%;
       height: auto; }
+      #mainContent .mainContent_row:nth-child(3) .mainContent_row_blurb h2.mainContent_row_blurb_heading--light {
+        word-break: break-word; }
     #mainContent .mainContent_row:nth-child(3) .mainContent_row_img {
       margin-top: -4rem;
       margin-bottom: -7rem;
@@ -180,41 +182,41 @@ a {
   #mainContent .mainContent_row:nth-child(4) {
     overflow-x: hidden; }
     #mainContent .mainContent_row:nth-child(4) .mainContent_row_img {
-      margin-left: -17.5rem;
-      width: 100%;
+      margin-left: -20.25%;
+      width: 70%;
       height: auto; }
     #mainContent .mainContent_row:nth-child(4) .mainContent_row_blurb {
       margin-top: 8rem;
       margin-left: 5rem;
-      margin-right: 12rem; }
+      width: 35%;
+      height: auto; }
 
 footer#bottomContent {
   border-top-right-radius: 10rem;
   background-color: #25252d;
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  footer#bottomContent img#bottomContent_logo {
-    margin-bottom: 12rem; }
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
   footer#bottomContent #bottomContent_nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     height: auto; }
-    footer#bottomContent #bottomContent_nav h5 {
-      color: #c8c8cb; }
-    footer#bottomContent #bottomContent_nav .bottomContent_nav_subOptions {
+    footer#bottomContent #bottomContent_nav img#bottomContent_logo {
+      margin-bottom: 12rem; }
+    footer#bottomContent #bottomContent_nav .bottomContent_nav_option h5 {
+      color: white; }
+    footer#bottomContent #bottomContent_nav .bottomContent_nav_option .bottomContent_nav_subOptions {
       display: flex;
       flex-direction: column; }
-      footer#bottomContent #bottomContent_nav .bottomContent_nav_subOptions a {
+      footer#bottomContent #bottomContent_nav .bottomContent_nav_option .bottomContent_nav_subOptions a {
         color: #c8c8cb;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem; }
-        footer#bottomContent #bottomContent_nav .bottomContent_nav_subOptions a:hover {
+        footer#bottomContent #bottomContent_nav .bottomContent_nav_option .bottomContent_nav_subOptions a:hover {
           text-decoration: underline; }
 
 @media only screen and (max-width: 375px) {
