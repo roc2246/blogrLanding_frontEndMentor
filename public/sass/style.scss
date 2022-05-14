@@ -30,6 +30,7 @@ $content_fontFamily: "Overpass", sans-serif;
 $content_borderRadius: 10rem;
 
 @mixin ctaBttn() {
+  font-weight: 800;
   background-color: $topContent_signUp_backgroundColor;
   color: $topContent_signUp_textColor;
   border-radius: 2rem;
@@ -64,13 +65,14 @@ a {
   color: $content_textColor;
 }
 
-#topContent_nav_left_logo, #bottomContent_logo {
-  height: 50%;
+#topContent_nav_left_logo,
+#bottomContent_logo {
+  max-height: 50%;
 }
 
 #topContent {
   width: 100%;
-  height: 35rem;
+  height: auto;
   color: $content_textColor;
   border-bottom-left-radius: $content_borderRadius;
   background-image: url("../images/bg-pattern-intro-desktop.svg"),
@@ -94,8 +96,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 3.5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 10%;
+    padding-right: 10%;
     #topContent_nav_left {
       width: 50%;
       height: auto;
@@ -147,16 +149,18 @@ a {
   }
   header {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 100%;
     padding-bottom: 6rem;
     h1#topContent_heading {
+      font-size: 3.5rem;
       margin-top: 4rem;
       margin-bottom: 0rem;
     }
     h5#topContent_subheading {
-      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 100;
+      margin-top: 1rem;
       margin-bottom: 4rem;
     }
     a {
@@ -168,6 +172,7 @@ a {
       border-color: white;
       padding: 0.75rem;
       margin: 0.5rem;
+      font-weight: 800;
       &:hover {
         background-color: $topContent_signUp_backgroundColor;
         color: $topContent_signUp_textColor;

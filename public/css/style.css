@@ -13,12 +13,13 @@ a {
   text-decoration: none;
   color: white; }
 
-#topContent_nav_left_logo, #bottomContent_logo {
-  height: 50%; }
+#topContent_nav_left_logo,
+#bottomContent_logo {
+  max-height: 50%; }
 
 #topContent {
   width: 100%;
-  height: 35rem;
+  height: auto;
   color: white;
   border-bottom-left-radius: 10rem;
   background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
@@ -33,8 +34,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 3.5rem;
-    padding-left: 8rem;
-    padding-right: 8rem; }
+    padding-left: 10%;
+    padding-right: 10%; }
     #topContent nav#topContent_nav #topContent_nav_left {
       width: 50%;
       height: auto;
@@ -70,6 +71,7 @@ a {
       #topContent nav#topContent_nav #topContent_nav_right a {
         margin-left: 2rem; }
       #topContent nav#topContent_nav #topContent_nav_right .ctaButton {
+        font-weight: 800;
         background-color: white;
         color: #ff525d;
         border-radius: 2rem;
@@ -81,15 +83,17 @@ a {
           color: white; }
   #topContent header {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 100%;
     padding-bottom: 6rem; }
     #topContent header h1#topContent_heading {
+      font-size: 3.5rem;
       margin-top: 4rem;
       margin-bottom: 0rem; }
     #topContent header h5#topContent_subheading {
-      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 100;
+      margin-top: 1rem;
       margin-bottom: 4rem; }
     #topContent header a {
       background-color: #ff7a85;
@@ -99,12 +103,14 @@ a {
       border-radius: 2rem;
       border-color: white;
       padding: 0.75rem;
-      margin: 0.5rem; }
+      margin: 0.5rem;
+      font-weight: 800; }
       #topContent header a:hover {
         background-color: white;
         color: #ff525d; }
     #topContent header .ctaButton:nth-child(1) {
       border: none;
+      font-weight: 800;
       background-color: white;
       color: #ff525d;
       border-radius: 2rem;
