@@ -179,8 +179,8 @@ a {
   .mainContent_row {
     display: flex;
     flex-direction: row;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     .mainContent_row_blurb {
       display: flex;
       flex-direction: column;
@@ -197,13 +197,18 @@ a {
   }
   //Top Row
   .mainContent_row:nth-child(2) {
-    background-color: white;
-    margin-left: 4rem;
-    justify-content: flex-end;
+    margin-left: 10rem;
     width: 100%;
     height: auto;
-    .mainContent_row_blurb {
-      margin-top: -3rem;
+    .mainContent_row_blurb{
+      width: 35%;
+      height: auto;
+    }
+    .mainContent_row_img {
+      width: 50%;
+      height: auto;
+      margin-left: 6rem;
+      margin-top: -2rem;
     }
   }
   //"State of the Art Infrastructure" row
@@ -237,10 +242,6 @@ a {
     overflow-x: hidden;
     .mainContent_row_blurb {
       margin-left: 4rem;
-    }
-    .mainContent_row_img {
-      // margin-left: -13rem;
-      // overflow-x: hidden;
     }
   }
 }

@@ -117,8 +117,8 @@ a {
   #mainContent .mainContent_row {
     display: flex;
     flex-direction: row;
-    margin-top: 8rem;
-    margin-bottom: 8rem; }
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
     #mainContent .mainContent_row .mainContent_row_blurb {
       display: flex;
       flex-direction: column;
@@ -130,13 +130,17 @@ a {
       #mainContent .mainContent_row .mainContent_row_blurb h2.mainContent_row_blurb_heading--light {
         margin-bottom: 0.5rem; }
   #mainContent .mainContent_row:nth-child(2) {
-    background-color: white;
-    margin-left: 4rem;
-    justify-content: flex-end;
+    margin-left: 10rem;
     width: 100%;
     height: auto; }
     #mainContent .mainContent_row:nth-child(2) .mainContent_row_blurb {
-      margin-top: -3rem; }
+      width: 35%;
+      height: auto; }
+    #mainContent .mainContent_row:nth-child(2) .mainContent_row_img {
+      width: 50%;
+      height: auto;
+      margin-left: 6rem;
+      margin-top: -2rem; }
   #mainContent .mainContent_row:nth-child(3) {
     background-color: #2c2d3f;
     border-bottom-left-radius: 10rem;
