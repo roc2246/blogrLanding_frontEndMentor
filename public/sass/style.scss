@@ -215,15 +215,16 @@ a {
   }
   //Top Row
   .mainContent_row:nth-child(2) {
-    margin-left: 10rem;
+    overflow-x: hidden;
     .mainContent_row_blurb {
-      width: 35%;
+      min-width: 35%;
       height: auto;
+      margin-left: 10%;
     }
     .mainContent_row_img {
-      width: 50%;
+      min-width: 50%;
       height: auto;
-      margin-left: 6rem;
+      margin-left: 10rem;
       margin-top: -2rem;
     }
   }
