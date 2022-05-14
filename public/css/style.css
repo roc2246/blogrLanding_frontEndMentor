@@ -134,13 +134,17 @@ a {
     #mainContent .mainContent_row .mainContent_row_blurb {
       display: flex;
       flex-direction: column;
-      line-height: 1.5rem; }
+      line-height: 1.75rem;
+      font-weight: 400; }
       #mainContent .mainContent_row .mainContent_row_blurb h3.mainContent_row_blurb_heading--dark {
         color: #1f3f5b;
         margin-bottom: 0rem;
-        margin-top: 4rem; }
+        margin-top: 4rem;
+        font-size: 1.5rem; }
       #mainContent .mainContent_row .mainContent_row_blurb h2.mainContent_row_blurb_heading--light {
-        margin-bottom: 0.5rem; }
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        font-weight: 400; }
   #mainContent .mainContent_row:nth-child(2) {
     overflow-x: hidden; }
     #mainContent .mainContent_row:nth-child(2) .mainContent_row_blurb {
@@ -166,7 +170,8 @@ a {
     #mainContent .mainContent_row:nth-child(3) .mainContent_row_blurb {
       margin-top: auto;
       margin-bottom: auto;
-      width: 38%; }
+      width: 36%;
+      height: auto; }
     #mainContent .mainContent_row:nth-child(3) .mainContent_row_img {
       margin-top: -4rem;
       margin-bottom: -7rem;
