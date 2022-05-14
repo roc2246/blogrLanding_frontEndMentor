@@ -11,16 +11,13 @@ if (screen.width <= 390) {
   });
 }
 
-const mobileMenu = document.getElementById("topNav_mobile_menu");
-const mobileMenuToggle = document.getElementById("topNav_mobile--open");
+const dropDownOption = document.getElementsByClassName('topContent_nav_left_dropDownOption--hover');
 
-mobileMenu.style.display = "none";
-
-let toggleMenu = () => {
-    if (mobileMenu.style.display === "block") {
-        mobileMenu.style.display = "none";
+let toggleMenu = (o) => {
+    if (dropDownOption[o].style.display === "flex") {
+      dropDownOption[o].style.display = "none";
       } else {
-        mobileMenu.style.display = "block";
+        dropDownOption[o].style.display = "flex";
       }
 };
 
