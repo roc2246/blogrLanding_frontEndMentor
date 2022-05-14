@@ -163,10 +163,13 @@ a {
       margin-bottom: -7rem; }
   #mainContent .mainContent_row:nth-child(4) {
     width: 100%;
-    height: auto;
-    overflow-x: hidden; }
+    height: auto; }
+    #mainContent .mainContent_row:nth-child(4) .mainContent_row_img {
+      margin-left: -18rem; }
     #mainContent .mainContent_row:nth-child(4) .mainContent_row_blurb {
-      margin-left: 4rem; }
+      margin-top: 8rem;
+      margin-left: 5rem;
+      margin-right: 12rem; }
 
 footer#bottomContent {
   border-top-right-radius: 10rem;
