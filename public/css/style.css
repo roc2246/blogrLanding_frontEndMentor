@@ -13,7 +13,12 @@ a {
   text-decoration: none;
   color: white; }
 
+#topContent_nav_left_logo, #bottomContent_logo {
+  height: 50%; }
+
 #topContent {
+  width: 100%;
+  height: 35rem;
   color: white;
   border-bottom-left-radius: 10rem;
   background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
@@ -27,17 +32,16 @@ a {
     flex: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem; }
+    padding-top: 3.5rem;
+    padding-left: 8rem;
+    padding-right: 8rem; }
     #topContent nav#topContent_nav #topContent_nav_left {
       width: 50%;
+      height: auto;
       display: flex;
       flex: row;
       flex-wrap: wrap; }
-      #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_logo {
-        width: 25%;
-        height: auto;
+      #topContent nav#topContent_nav #topContent_nav_left img#topContent_nav_left_logo {
         padding-top: 0.25rem;
         margin-right: 2rem; }
       #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
@@ -181,8 +185,7 @@ footer#bottomContent {
   height: auto;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  footer#bottomContent img {
-    transform: scale(40%);
+  footer#bottomContent img#bottomContent_logo {
     margin-bottom: 12rem; }
   footer#bottomContent #bottomContent_nav {
     display: flex;
