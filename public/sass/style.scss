@@ -145,7 +145,7 @@ a {
         display: none;
       }
     }
-    img.topContent_nav_right_mobile--toggle{
+    img#topContent_nav_right_mobile--toggle {
       display: none;
       margin-top: -1rem;
     }
@@ -333,7 +333,7 @@ footer#bottomContent {
         #topContent_nav_right_membership {
           display: none;
         }
-        img.topContent_nav_right_mobile--toggle{
+        img#topContent_nav_right_mobile--toggle {
           display: block;
         }
         #topContent_nav_right_mobile {
@@ -366,7 +366,7 @@ footer#bottomContent {
                 text-align: center;
                 margin-left: 0rem;
                 padding: 0.5rem;
-                color: 	#536878;
+                color: #536878;
                 font-weight: bolder;
               }
             }
@@ -411,19 +411,66 @@ footer#bottomContent {
       }
     }
   }
-  /* #mainContnet{
-    .mainContent_row{
+  #mainContent {
+    flex-direction: column;
+
+    .mainContent_row {
       width: 100%;
-        height: auto;
-        .mainContent_row_blurb{
-          p {
-            text-align: center;
-          }
+      height: auto;
+      flex-direction: column;
+      margin-top: 20rem;
+      margin-bottom: 20rem;
+      .mainContent_row_blurb {
+        p {
+          text-align: center;
         }
-      .mainContent_row_img{
+      }
+      .mainContent_row_img {
         width: 100%;
         height: auto;
       }
     }
-  } */
+    //Top Row
+    .mainContent_row:nth-child(2) {
+      display: none;
+      .mainContent_row_blurb {
+        width: 100%;
+        height: auto;
+      }
+      .mainContent_row_img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    //"State of the Art Infrastructure" row
+  .mainContent_row:nth-child(3) {
+    background-size: cover;
+    background-repeat: no-repeat;
+ background-position-x: center;
+ background-position-y: -15rem;
+    
+    .mainContent_row_img {
+      margin-top: -12rem;
+      margin-bottom: 0rem;
+      width: 100%;
+      height: auto;
+    }
+    .mainContent_row_blurb {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      height: auto;
+      h2.mainContent_row_blurb_heading--light {
+        text-align: center;
+        line-height: 2.75rem;
+      }
+      p.mainContent_row_blurb_paragraph{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 15%;
+        
+      }
+    }
+  }
+  }
 }

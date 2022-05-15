@@ -23,6 +23,7 @@ const dropDownOptionDiv = document.getElementsByClassName(
 );
 
 const mobileNav = document.getElementById("topContent_nav_right_mobile")
+const mobileNavToggle = document.getElementById("topContent_nav_right_mobile--toggle");
 
 const toggleMenu = (o) => {
   //Desktop
@@ -45,8 +46,10 @@ const toggleMenu = (o) => {
 const toggleMobile = () => {
   if (mobileNav.style.display === "flex") {
     mobileNav.style.display = "none";
+    mobileNavToggle.src = "images/icon-hamburger.svg";
   } else {
     mobileNav.style.display = "flex";
+    mobileNavToggle.src = "images/icon-close.svg";
   }
 }
 
