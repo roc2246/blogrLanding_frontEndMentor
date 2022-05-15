@@ -9,17 +9,29 @@ if (screen.width <= 390) {
       images[image].src = mobileURL;
     }
   });
+  
 }
 
 const dropDownOption = document.getElementsByClassName(
   "topContent_nav_left_dropDownOption--hover"
 );
+const dropDownOptionMobile = document.getElementsByClassName(
+  "topContent_nav_right_mobile_dropDownOption--hover"
+);
 
 let toggleMenu = (o) => {
+  //Desktop
   if (dropDownOption[o].style.display === "flex") {
     dropDownOption[o].style.display = "none";
   } else {
     dropDownOption[o].style.display = "flex";
+  }
+
+  //Mobile
+  if (dropDownOptionMobile[o].style.display === "flex") {
+    dropDownOptionMobile[o].style.display = "none";
+  } else {
+    dropDownOptionMobile[o].style.display = "flex";
   }
 };
 

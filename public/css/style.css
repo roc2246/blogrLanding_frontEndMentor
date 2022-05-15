@@ -82,11 +82,13 @@ a {
         #topContent nav#topContent_nav #topContent_nav_right .ctaButton:hover {
           background-color: #ff7a85;
           color: white; }
+      #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile {
+        display: none; }
   #topContent header {
     text-align: center;
     margin: auto;
     width: 100%;
-    padding-bottom: 6rem; }
+    padding-bottom: 12rem; }
     #topContent header h1#topContent_heading {
       font-size: 3.5rem;
       margin-top: 4rem;
@@ -223,8 +225,52 @@ footer#bottomContent {
         footer#bottomContent #bottomContent_nav .bottomContent_nav_option .bottomContent_nav_subOptions a:hover {
           text-decoration: underline; }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   #topContent nav#topContent_nav #topContent_nav_left .topContent_nav_left_dropDownOption {
     display: none; }
-  #topContent nav#topContent_nav #topContent_nav_right {
-    display: none; } }
+  #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_membership {
+    display: none; }
+  #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 14vh;
+    left: 12vw;
+    width: 80%;
+    height: auto; }
+    #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile .topContent_nav_right_mobile_dropDownOption h5 {
+      text-align: center; }
+    #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile .topContent_nav_right_mobile_dropDownOption .topContent_nav_right_mobile_dropDownOption--hover {
+      display: none;
+      flex-direction: column;
+      background-color: #efeff1;
+      width: 90%;
+      height: auto;
+      margin: auto; }
+      #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile .topContent_nav_right_mobile_dropDownOption .topContent_nav_right_mobile_dropDownOption--hover a {
+        text-align: center;
+        padding: .5rem;
+        color: black; }
+    #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile .topContent_nav_right_mobile_dropDownOption #topContent_nav_right_mobile_membership {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      border: solid;
+      border-color: black; }
+  /* #mainContnet{
+    .mainContent_row{
+      width: 100%;
+        height: auto;
+        .mainContent_row_blurb{
+          p {
+            text-align: center;
+          }
+        }
+      .mainContent_row_img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  } */ }

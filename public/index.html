@@ -13,12 +13,15 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <script src="js/script.js"></script>
     <div id="topContent">
       <nav id="topContent_nav">
         <div id="topContent_nav_left">
           <img src="images/logo.svg" alt="" id="topContent_nav_left_logo" />
-          <div class="topContent_nav_left_dropDownOption" onmouseover="toggleMenu(0)" onmouseout="toggleMenu(0)">
+          <div
+            class="topContent_nav_left_dropDownOption"
+            onmouseover="toggleMenu(0)"
+            onmouseout="toggleMenu(0)"
+          >
             <h5>
               Product &nbsp;<img
                 src="images/icon-arrow-light.svg"
@@ -34,7 +37,11 @@
               <a href="#">Integrations</a>
             </div>
           </div>
-          <div class="topContent_nav_left_dropDownOption"   onmouseover="toggleMenu(1)" onmouseout="toggleMenu(1)">
+          <div
+            class="topContent_nav_left_dropDownOption"
+            onmouseover="toggleMenu(1)"
+            onmouseout="toggleMenu(1)"
+          >
             <h5>
               Company &nbsp;<img
                 src="images/icon-arrow-light.svg"
@@ -49,7 +56,11 @@
               <a href="#">Careers</a>
             </div>
           </div>
-          <div class="topContent_nav_left_dropDownOption"  onmouseover="toggleMenu(2)" onmouseout="toggleMenu(2)">
+          <div
+            class="topContent_nav_left_dropDownOption"
+            onmouseover="toggleMenu(2)"
+            onmouseout="toggleMenu(2)"
+          >
             <h5>
               Connect &nbsp;<img
                 src="images/icon-arrow-light.svg"
@@ -69,6 +80,69 @@
           <div id="topContent_nav_right_membership">
             <a href="#">Login</a>
             <a class="ctaButton" href="#">Sign Up</a>
+          </div>
+          <!--Mobile Nav-->
+          <div id="topContent_nav_right_mobile">
+            <div
+              class="topContent_nav_right_mobile_dropDownOption"
+              ontouchstart="toggleMenu(0)"
+            >
+              <h5>
+                Product &nbsp;<img
+                  src="images/icon-arrow-dark.svg"
+                  alt=""
+                  class="topContent_nav_right_mobile_dropdownOption_arrow"
+                />
+              </h5>
+              <div class="topContent_nav_right_mobile_dropDownOption--hover">
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">Integrations</a>
+              </div>
+            </div>
+            <div
+              class="topContent_nav_right_mobile_dropDownOption"
+              ontouchstart="toggleMenu(1)"
+            >
+              <h5>
+                Company &nbsp;<img
+                  src="images/icon-arrow-dark.svg"
+                  alt=""
+                  class="topContent_nav_right_mobile_dropdownOption_arrow"
+                />
+              </h5>
+              <div class="topContent_nav_right_mobile_dropDownOption--hover">
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+            <div
+              class="topContent_nav_right_mobile_dropDownOption"
+              ontouchstart="toggleMenu(2)"
+            >
+              <h5>
+                Connect &nbsp;<img
+                  src="images/icon-arrow-dark.svg"
+                  alt=""
+                  class="topContent_nav_right_mobile_dropdownOption_arrow"
+                />
+              </h5>
+              <div class="topContent_nav_right_mobile_dropDownOption--hover">
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+            <hr>
+            <div id="topContent_nav_right_mobile_membership">
+              <a href="#">Login</a>
+              <a class="ctaButton" href="#">Sign Up</a>
+            </div>
+            <!--End Mobile Nav-->
           </div>
         </div>
       </nav>
@@ -203,5 +277,6 @@
         >Frontend Mentor</a
       >.
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
