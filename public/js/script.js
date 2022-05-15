@@ -18,6 +18,9 @@ const dropDownOption = document.getElementsByClassName(
 const dropDownOptionMobile = document.getElementsByClassName(
   "topContent_nav_right_mobile_dropDownOption--hover"
 );
+const dropDownOptionDiv = document.getElementsByClassName(
+  "topContent_nav_right_mobile_dropDownOption"
+);
 
 let toggleMenu = (o) => {
   //Desktop
@@ -30,8 +33,10 @@ let toggleMenu = (o) => {
   //Mobile
   if (dropDownOptionMobile[o].style.display === "flex") {
     dropDownOptionMobile[o].style.display = "none";
+    dropDownOptionDiv[o].childNodes[1].style.color = "black"
   } else {
     dropDownOptionMobile[o].style.display = "flex";
+    dropDownOptionDiv[o].childNodes[1].style.color = "#536878"
   }
 };
 

@@ -339,9 +339,12 @@ footer#bottomContent {
           left: 12vw;
           width: 80%;
           height: auto;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
           .topContent_nav_right_mobile_dropDownOption {
             h5 {
               text-align: center;
+              font-size: 1rem;
             }
             .topContent_nav_right_mobile_dropDownOption--hover {
               display: none;
@@ -350,18 +353,51 @@ footer#bottomContent {
               width: 90%;
               height: auto;
               margin: auto;
+              padding-top: 1rem;
+              padding-bottom: 1rem;
               a {
-              text-align: center;
-              padding: .5rem;
-              color: black;
+                text-align: center;
+                margin-left: 0rem;
+                padding: 0.5rem;
+                color: 	#536878;
+                font-weight: bolder;
               }
             }
-            #topContent_nav_right_mobile_membership{
-              display: flex;
-              flex-direction: column;
-              justify-items: center;
-              border: solid;
-              border-color: black;
+          }
+          hr {
+            color: black;
+            width: 80%;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+          }
+          #topContent_nav_right_mobile_membership {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            a {
+              text-align: center;
+              margin-left: 0rem;
+              color: black;
+              font-weight: 800;
+              margin-bottom: 1rem;
+            }
+            .ctaButton {
+              margin-left: auto;
+              margin-right: auto;
+              font-weight: 800;
+              background-image: linear-gradient(
+                to right,
+                $topContent_backgroundColor--lighter,
+                $topContent_backgroundColor--darker
+              );
+              color: white;
+              border-radius: 2rem;
+              padding: 0.75rem;
+              width: 6rem;
+              &:hover {
+                background-color: white;
+                color: $topContent_signUp_textColor--hover;
+              }
             }
           }
         }
