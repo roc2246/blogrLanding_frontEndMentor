@@ -308,7 +308,8 @@ footer#bottomContent {
         width: 100%;
         height: auto; }
     #mainContent .mainContent_row:nth-child(2) {
-      overflow-x: visible; }
+      overflow-x: visible;
+      margin-bottom: 14rem; }
       #mainContent .mainContent_row:nth-child(2) .mainContent_row_img--mobile {
         display: block; }
       #mainContent .mainContent_row:nth-child(2) .mainContent_row_blurb {
