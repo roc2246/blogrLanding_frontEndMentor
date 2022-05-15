@@ -7,6 +7,8 @@ if (screen.width <= 390) {
     if (match === true) {
       const mobileURL = url.replace(/desktop/, "mobile");
       images[image].src = mobileURL;
+    } else if (match !== false){
+      console.log(url);
     }
   });
   

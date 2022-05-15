@@ -432,7 +432,6 @@ footer#bottomContent {
     }
     //Top Row
     .mainContent_row:nth-child(2) {
-      display: none;
       .mainContent_row_blurb {
         width: 100%;
         height: auto;
@@ -463,12 +462,35 @@ footer#bottomContent {
       h2.mainContent_row_blurb_heading--light {
         text-align: center;
         line-height: 2.75rem;
+        margin-top: 0rem;
       }
       p.mainContent_row_blurb_paragraph{
         padding-left: 15%;
         padding-right: 15%;
         padding-bottom: 15%;
         
+      }
+    }
+  }
+  //"Free, open, simple" row
+  .mainContent_row:nth-child(4) {
+    overflow: hidden;
+    .mainContent_row_img {
+      margin-left: 0rem;
+      width: 100%;
+      height: auto;
+    }
+    .mainContent_row_blurb {
+      margin-top: 0rem;
+      width: 100%;
+      margin-left: 0rem;
+      height: auto;
+      h3{
+        text-align: center;
+      }
+      p{
+        margin-left: 12%;
+        margin-right: 12%;
       }
     }
   }
