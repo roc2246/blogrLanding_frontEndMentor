@@ -7,7 +7,8 @@ body {
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-color: #fafafa; }
 
 a {
   text-decoration: none;
@@ -120,9 +121,12 @@ a {
         color: white; }
 
 #mainContent {
-  margin-top: 6rem; }
+  padding-top: 6rem;
+  padding-bottom: 4rem; }
   #mainContent h2#mainContent_heading {
     text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
     color: #1f3f5b; }
   #mainContent .mainContent_row {
     display: flex;

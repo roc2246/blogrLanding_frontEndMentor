@@ -14,6 +14,7 @@ $topContent_signUp_backgroundColor: hsl(0, 0%, 100%);
 $topContent_signUp_backgroundColor--hover: hsl(355, 100%, 74%);
 
 $mainContent_row_headingColor: hsl(208, 49%, 24%);
+$mainContent_row_backgroundColor--light: #fafafa;
 $mainContent_row_backgroundColor--dark--lighter: hsl(237, 23%, 32%);
 $mainContent_row_backgroundColor--dark--darker: hsl(237, 17%, 21%);
 $mainContent_row_textColor--dark: hsl(207, 13%, 34%);
@@ -52,6 +53,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: $mainContent_row_backgroundColor--light;
+
 }
 
 a {
@@ -180,9 +183,12 @@ a {
 }
 
 #mainContent {
-  margin-top: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   h2#mainContent_heading {
     text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
     color: $mainContent_row_headingColor;
   }
   //All Rows
