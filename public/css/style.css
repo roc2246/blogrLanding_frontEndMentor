@@ -84,6 +84,9 @@ a {
           color: white; }
       #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile {
         display: none; }
+    #topContent nav#topContent_nav img.topContent_nav_right_mobile--toggle {
+      display: none;
+      margin-top: -1rem; }
   #topContent header {
     text-align: center;
     margin: auto;
@@ -230,8 +233,10 @@ footer#bottomContent {
     display: none; }
   #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_membership {
     display: none; }
+  #topContent nav#topContent_nav #topContent_nav_right img.topContent_nav_right_mobile--toggle {
+    display: block; }
   #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: white;
     color: black;

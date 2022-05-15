@@ -145,6 +145,10 @@ a {
         display: none;
       }
     }
+    img.topContent_nav_right_mobile--toggle{
+      display: none;
+      margin-top: -1rem;
+    }
   }
   header {
     text-align: center;
@@ -329,8 +333,11 @@ footer#bottomContent {
         #topContent_nav_right_membership {
           display: none;
         }
+        img.topContent_nav_right_mobile--toggle{
+          display: block;
+        }
         #topContent_nav_right_mobile {
-          display: flex;
+          display: none;
           flex-direction: column;
           background-color: white;
           color: black;

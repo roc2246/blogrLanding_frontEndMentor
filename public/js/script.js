@@ -22,7 +22,9 @@ const dropDownOptionDiv = document.getElementsByClassName(
   "topContent_nav_right_mobile_dropDownOption"
 );
 
-let toggleMenu = (o) => {
+const mobileNav = document.getElementById("topContent_nav_right_mobile")
+
+const toggleMenu = (o) => {
   //Desktop
   if (dropDownOption[o].style.display === "flex") {
     dropDownOption[o].style.display = "none";
@@ -39,6 +41,15 @@ let toggleMenu = (o) => {
     dropDownOptionDiv[o].childNodes[1].style.color = "#536878"
   }
 };
+
+const toggleMobile = () => {
+  if (mobileNav.style.display === "flex") {
+    mobileNav.style.display = "none";
+  } else {
+    mobileNav.style.display = "flex";
+  }
+}
+
 
 //Use to dedect offset elements
 /* var docWidth = document.documentElement.offsetWidth;
