@@ -294,6 +294,17 @@ footer#bottomContent {
         #topContent nav#topContent_nav #topContent_nav_right #topContent_nav_right_mobile #topContent_nav_right_mobile_membership .ctaButton:hover {
           background-color: white;
           color: white; }
+  #topContent header h1#topContent_heading {
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 0rem; }
+  #topContent header h5#topContent_subheading {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 10%;
+    margin-right: 10%; }
   #mainContent {
     flex-direction: column; }
     #mainContent .mainContent_row {

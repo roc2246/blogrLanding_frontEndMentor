@@ -413,6 +413,21 @@ footer#bottomContent {
         }
       }
     }
+    header {
+      h1#topContent_heading {
+        font-size: 2rem;
+        margin-top: 8rem;
+        margin-bottom: 0rem;
+      }
+      h5#topContent_subheading {
+        font-size: 1.25rem;
+        font-weight: 100;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
   }
   #mainContent {
     flex-direction: column;

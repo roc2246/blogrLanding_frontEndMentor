@@ -1,18 +1,26 @@
 const images = document.querySelectorAll("img");
 
-if (screen.width <= 390) {
-  Object.keys(images).forEach((image) => {
-    let url = images[image].src;
-    const match = /desktop/.test(url);
-    if (match === true) {
-      const mobileURL = url.replace(/desktop/, "mobile");
-      images[image].src = mobileURL;
-    } else if (match !== false){
-      console.log(url);
-    }
-  });
-  
-}
+window.onresize = () => {
+  if (window.innerWidth <= 390) {
+    Object.keys(images).forEach((image) => {
+      let url = images[image].src;
+      const match = /desktop/.test(url);
+      if (match === true) {
+        const mobileURL = url.replace(/desktop/, "mobile");
+        images[image].src = mobileURL;
+      }
+    });
+  } else {
+    Object.keys(images).forEach((image) => {
+      let url = images[image].src;
+      const match = /mobile/.test(url);
+      if (match === true) {
+        const mobileURL = url.replace(/mobile/, "desktop");
+        images[image].src = mobileURL;
+      }
+    });
+  }
+};
 
 const dropDownOption = document.getElementsByClassName(
   "topContent_nav_left_dropDownOption--hover"
@@ -24,8 +32,10 @@ const dropDownOptionDiv = document.getElementsByClassName(
   "topContent_nav_right_mobile_dropDownOption"
 );
 
-const mobileNav = document.getElementById("topContent_nav_right_mobile")
-const mobileNavToggle = document.getElementById("topContent_nav_right_mobile--toggle");
+const mobileNav = document.getElementById("topContent_nav_right_mobile");
+const mobileNavToggle = document.getElementById(
+  "topContent_nav_right_mobile--toggle"
+);
 
 const toggleMenu = (o) => {
   //Desktop
@@ -38,10 +48,10 @@ const toggleMenu = (o) => {
   //Mobile
   if (dropDownOptionMobile[o].style.display === "flex") {
     dropDownOptionMobile[o].style.display = "none";
-    dropDownOptionDiv[o].childNodes[1].style.color = "black"
+    dropDownOptionDiv[o].childNodes[1].style.color = "black";
   } else {
     dropDownOptionMobile[o].style.display = "flex";
-    dropDownOptionDiv[o].childNodes[1].style.color = "#536878"
+    dropDownOptionDiv[o].childNodes[1].style.color = "#536878";
   }
 };
 
@@ -53,8 +63,7 @@ const toggleMobile = () => {
     mobileNav.style.display = "flex";
     mobileNavToggle.src = "images/icon-close.svg";
   }
-}
-
+};
 
 //Use to dedect offset elements
 /* var docWidth = document.documentElement.offsetWidth;
